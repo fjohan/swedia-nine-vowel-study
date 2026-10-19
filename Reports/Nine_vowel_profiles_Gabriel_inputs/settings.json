@@ -1,0 +1,28 @@
+{
+  "input": "data/nine_vowel_token_trajectories.csv",
+  "n_villages": 83,
+  "bootstrap": 200,
+  "seed": 20261018,
+  "tie_repetitions": 20,
+  "clusters_per_vowel": [
+    2,
+    3,
+    4
+  ],
+  "geography": "vowels",
+  "graph": "Plain Gabriel graph, no distance cutoff; empty closed diameter disk with radius-squared-relative tolerance 1e-10. Rebuilt on retained villages in each bootstrap. No acoustic information, silent graph completion or travel/water constraints.",
+  "ward": "Adjacency-constrained Ward minimizes SSE increase among graph-linked groups; unit village weights; cuts follow merge sequence rather than sorting potentially nonmonotone heights.",
+  "aggregation": "Token medians per speaker/vowel/timepoint, then medians across speakers",
+  "modes": {
+    "position50": "2 coordinates at 50%",
+    "trajectory": "6 coordinates at 20/50/80%",
+    "movement": "4 differences: 50−20 and 80−50, each with 2 acoustic axes"
+  },
+  "vowel_clustering": "Independent Ward trees for each vowel/method/mode; one pooled SD per axis within vowel; divide concatenation by sqrt(number of temporal vectors); no Procrustes alignment",
+  "profile_matching": "Exact rows at 9; greedy nested common-core groups at 8..3. Identical labels on the SAME named vowels across ALL members; not pairwise-only thresholding.",
+  "merge_priority": "More shared named cells, then larger combined group, then fixed alphabetical village index and internal IDs. Randomized tie-order audit changes only the final tie criterion.",
+  "bootstrap_method": "Whole speakers resampled jointly across vowels/timepoints. Incomplete resampled villages omitted for that replicate. Per-vowel clusters and profile hierarchy both refitted. Axis scales and spectral PCA fixed. Label-matched exact-row return; label-invariant group ARI/Jaccard/pair retention conditional on presence.",
+  "caution": "Categorical compression and prescribed k can create or split profiles; shared-core partitions are greedy and tie-sensitive, not unique optimal regions. Exact-row return is especially stringent over nine cells.",
+  "n_gabriel_edges": 162,
+  "profile_constraint": "Literal exact rows and unconstrained relaxed profile merges; profiles need not be connected"
+}

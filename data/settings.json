@@ -1,0 +1,50 @@
+{
+  "fasttrack_min_ceiling": 4000.0,
+  "fasttrack_max_ceiling": 7000.0,
+  "fasttrack_steps": 20,
+  "window_length": 0.025,
+  "time_step": 0.002,
+  "pre_emphasis": 50.0,
+  "pca_sample_rate": 16000,
+  "pca_window_ms": 25.0,
+  "pca_n_fft": 1024,
+  "pca_bands": 20,
+  "pca_max_bark": 21.0,
+  "pca_components": 3,
+  "limit_tokens": 0,
+  "input_annotations": "TextGrids_all_wos",
+  "regions": "All; no Gotland/Finland exclusion",
+  "software": {
+    "fasttrackpy": "0.6.1",
+    "praat-parselmouth": "0.4.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "i_words": [
+    "dis",
+    "ris",
+    "gris"
+  ],
+  "i_surface_labels": [
+    "i:",
+    "I:"
+  ],
+  "other_vowels": "Existing base and approved alternatives; exactly one vowel segment; surface variation allowed",
+  "time_windows": "11 equally spaced measurements within ±5% of vowel duration around 20/50/80%; median",
+  "bark": "26.81/(1+1960/Hz)-0.53, applied to the local median Hz value",
+  "pca": "New SVD PCA of level-normalized 20-band Bark log spectra; mean per speaker/vowel/timepoint cell; centre bands, no band SD scaling",
+  "pca_display": "Original unrotated scores; signs fixed by largest absolute loading being positive; not comparable numerically to previous PCA models",
+  "cached_measurements_seeded": 10827,
+  "n_tokens": 13558,
+  "n_villages": 91,
+  "n_speakers": 273,
+  "fasttrack_status": {
+    "ok": 13558
+  },
+  "balanced_pca_cells": 6960,
+  "explained_variance_ratio": [
+    0.450602775847242,
+    0.23886524118065658,
+    0.08692627020400559
+  ]
+}

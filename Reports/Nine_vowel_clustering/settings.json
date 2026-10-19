@@ -1,0 +1,13 @@
+{
+  "input": "data/nine_vowel_token_trajectories.csv",
+  "n_villages": 83,
+  "n_excluded": 8,
+  "bootstrap": 300,
+  "seed": 20261017,
+  "clustering": "Ward hierarchical clustering; Euclidean configuration distances; k=2..6; geography excluded",
+  "aggregation": "Coordinate-wise token medians within speaker/vowel/timepoint, then medians across speakers",
+  "scaling": "One SD per acoustic axis pooled across included villages, vowels and selected timepoints; fixed for bootstrap. Divide concatenated features by sqrt(number of timepoints). No Procrustes alignment or per-village normalization.",
+  "bootstrap_method": "Resample whole speakers within each village; retain all vowel/timepoint measurements together. Villages missing any resampled anchor omitted only in that replicate. No imputation. Coassignment denominators count joint presence; ARI evaluated on retained villages.",
+  "cluster_averages": "Arithmetic mean of village medians, equal village weights; displayed in original acoustic units",
+  "caution": "Descriptive exploratory groups, not established dialect regions. Static and all-timepoint fits are overlapping, not independent evidence. Bootstrap does not resample tokens or refit spectral PCA."
+}

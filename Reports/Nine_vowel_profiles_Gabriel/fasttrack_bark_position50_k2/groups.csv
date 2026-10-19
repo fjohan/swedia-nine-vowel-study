@@ -1,0 +1,43 @@
+threshold,group,n_villages,members,common_core,n_shared_vowels,mean_bootstrap_jaccard,pair_retained
+9,1,29,anundsjo are arjeplog arsunda aspas berg bjurholm burtrask dalby graso karsta kramfors leksand malung nora nysatra ockelbo ovanaker pitea ragunda s_finnskoga skog skuttunge sorsele storsjo strom torp vemdalen vilhelmina,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=2,9,0.5484841673832348,0.6726939405621419
+9,2,15,boda bredsattra burseryd frandef frillesas jarsnas karna orust ostad oxaback segerstad skee stenberga torhamn torsas,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.36999014984457373,0.4968328798817929
+9,3,5,ankarsrum asby lanna rimforsa st_anna,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=1 iː=1,9,0.2931939215944793,0.532
+9,4,5,grangarde haraker skinnskatteberg v_vingaker villberga,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.18510885449161296,0.4652916666666667
+9,5,4,bara jamshog loderup n_rorum,uː=2 oː=2 ɑː=1 æː=1 eː=1 yː=2 ʉ̟ː=1 øː=2 iː=1,9,0.6134345519118,0.7714368080905215
+9,6,4,bengtsf floby korsberga torso,uː=1 oː=1 ɑː=1 æː=1 eː=2 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.30993104362318796,0.7075
+9,7,4,borga dragsfjard houtskar kyrkslatt,uː=1 oː=1 ɑː=2 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,9,0.6701624742587334,0.907902097902098
+9,8,3,arstad hamneda vaxtorp,uː=2 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.2701010575002241,0.5033333333333333
+9,9,3,brando narpes saltvik,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,9,0.35542819752140703,0.4075222816399287
+9,10,3,s_mellosa tjallmo viby,uː=1 oː=1 ɑː=1 æː=1 eː=2 yː=1 ʉ̟ː=1 øː=1 iː=1,9,0.32199896439723846,0.6106563039723661
+9,11,2,faro sproge,uː=1 oː=1 ɑː=1 æː=2 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.35558845266450523,0.7194244604316546
+9,12,1,broby,uː=2 oː=1 ɑː=1 æː=1 eː=1 yː=2 ʉ̟ː=1 øː=2 iː=1,9,0.4541361593585917,
+9,13,1,hammaro,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.18228816255526098,
+9,14,1,jarnboas,uː=1 oː=1 ɑː=1 æː=1 eː=2 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.27059351076460897,
+9,15,1,ossjo,uː=2 oː=2 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.25544655589138254,
+9,16,1,sorunda,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=1 iː=2,9,0.23413904635696559,
+9,17,1,vackelsang,uː=2 oː=1 ɑː=1 æː=1 eː=1 yː=2 ʉ̟ː=1 øː=2 iː=1,9,0.37478031156580344,
+8,1,35,anundsjo are arjeplog arsunda aspas berg bjurholm burtrask dalby grangarde graso hammaro haraker karsta kramfors leksand malung nora nysatra ockelbo ovanaker pitea ragunda s_finnskoga skinnskatteberg skog skuttunge sorsele storsjo strom torp v_vingaker vemdalen vilhelmina villberga,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2,8,0.57074624141756,0.7165604396686815
+8,2,19,bengtsf boda bredsattra burseryd floby frandef frillesas jarsnas karna korsberga orust ostad oxaback segerstad skee stenberga torhamn torsas torso,uː=1 oː=1 ɑː=1 æː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,8,0.40479542447149697,0.623616655366274
+8,3,7,borga brando dragsfjard houtskar kyrkslatt narpes saltvik,uː=1 oː=1 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,8,0.6710534676873287,0.7682184599129287
+8,4,6,ankarsrum asby lanna rimforsa sorunda st_anna,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=1,8,0.20516759037023316,0.6697326565143824
+8,5,6,bara broby jamshog loderup n_rorum vackelsang,uː=2 ɑː=1 æː=1 eː=1 yː=2 ʉ̟ː=1 øː=2 iː=1,8,0.4867305813593908,0.693790760954702
+8,6,4,arstad hamneda ossjo vaxtorp,uː=2 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,8,0.22286419470170132,0.5633333333333332
+8,7,4,jarnboas s_mellosa tjallmo viby,uː=1 oː=1 ɑː=1 æː=1 eː=2 yː=1 ʉ̟ː=1 iː=1,8,0.24953077200936397,0.7330397236614855
+8,8,2,faro sproge,uː=1 oː=1 ɑː=1 æː=2 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.29553090214541655,0.8345323741007195
+7,1,41,ankarsrum anundsjo are arjeplog arsunda asby aspas berg bjurholm burtrask dalby grangarde graso hammaro haraker karsta kramfors lanna leksand malung nora nysatra ockelbo ovanaker pitea ragunda rimforsa s_finnskoga skinnskatteberg skog skuttunge sorsele sorunda st_anna storsjo strom torp v_vingaker vemdalen vilhelmina villberga,uː=1 oː=1 ɑː=1 æː=1 eː=1 yː=1 ʉ̟ː=1,7,0.5714241384106112,0.7152568166039672
+7,2,23,bengtsf boda bredsattra burseryd floby frandef frillesas jarnboas jarsnas karna korsberga orust ostad oxaback s_mellosa segerstad skee stenberga tjallmo torhamn torsas torso viby,uː=1 oː=1 ɑː=1 æː=1 yː=1 ʉ̟ː=1 iː=1,7,0.3855818050840827,0.6494096056447336
+7,3,10,arstad bara broby hamneda jamshog loderup n_rorum ossjo vackelsang vaxtorp,uː=2 ɑː=1 æː=1 eː=1 ʉ̟ː=1 øː=2 iː=1,7,0.5362771564160173,0.7213710784801213
+7,4,7,borga brando dragsfjard houtskar kyrkslatt narpes saltvik,uː=1 oː=1 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,8,0.6456500950411818,0.8462245232087198
+7,5,2,faro sproge,uː=1 oː=1 ɑː=1 æː=2 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.22691150619951833,0.8633093525179856
+6,1,64,ankarsrum anundsjo are arjeplog arsunda asby aspas bengtsf berg bjurholm boda bredsattra burseryd burtrask dalby floby frandef frillesas grangarde graso hammaro haraker jarnboas jarsnas karna karsta korsberga kramfors lanna leksand malung nora nysatra ockelbo orust ostad ovanaker oxaback pitea ragunda rimforsa s_finnskoga s_mellosa segerstad skee skinnskatteberg skog skuttunge sorsele sorunda st_anna stenberga storsjo strom tjallmo torhamn torp torsas torso v_vingaker vemdalen viby vilhelmina villberga,uː=1 oː=1 ɑː=1 æː=1 yː=1 ʉ̟ː=1,6,0.581732890013633,0.6134083430950933
+6,2,10,arstad bara broby hamneda jamshog loderup n_rorum ossjo vackelsang vaxtorp,uː=2 ɑː=1 æː=1 eː=1 ʉ̟ː=1 øː=2 iː=1,7,0.5211161542566453,0.7964835260648239
+6,3,7,borga brando dragsfjard houtskar kyrkslatt narpes saltvik,uː=1 oː=1 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,8,0.5929962003565004,0.887459374105555
+6,4,2,faro sproge,uː=1 oː=1 ɑː=1 æː=2 eː=1 yː=1 ʉ̟ː=1 øː=2 iː=1,9,0.15645217015565022,0.8992805755395683
+5,1,66,ankarsrum anundsjo are arjeplog arsunda asby aspas bengtsf berg bjurholm boda bredsattra burseryd burtrask dalby faro floby frandef frillesas grangarde graso hammaro haraker jarnboas jarsnas karna karsta korsberga kramfors lanna leksand malung nora nysatra ockelbo orust ostad ovanaker oxaback pitea ragunda rimforsa s_finnskoga s_mellosa segerstad skee skinnskatteberg skog skuttunge sorsele sorunda sproge st_anna stenberga storsjo strom tjallmo torhamn torp torsas torso v_vingaker vemdalen viby vilhelmina villberga,uː=1 oː=1 ɑː=1 yː=1 ʉ̟ː=1,5,0.6183775807243578,0.6503187100649889
+5,2,10,arstad bara broby hamneda jamshog loderup n_rorum ossjo vackelsang vaxtorp,uː=2 ɑː=1 æː=1 eː=1 ʉ̟ː=1 øː=2 iː=1,7,0.4707666294077836,0.8394170881421767
+5,3,7,borga brando dragsfjard houtskar kyrkslatt narpes saltvik,uː=1 oː=1 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,8,0.5283422286363992,0.9144670518243829
+4,1,66,ankarsrum anundsjo are arjeplog arsunda asby aspas bengtsf berg bjurholm boda bredsattra burseryd burtrask dalby faro floby frandef frillesas grangarde graso hammaro haraker jarnboas jarsnas karna karsta korsberga kramfors lanna leksand malung nora nysatra ockelbo orust ostad ovanaker oxaback pitea ragunda rimforsa s_finnskoga s_mellosa segerstad skee skinnskatteberg skog skuttunge sorsele sorunda sproge st_anna stenberga storsjo strom tjallmo torhamn torp torsas torso v_vingaker vemdalen viby vilhelmina villberga,uː=1 oː=1 ɑː=1 yː=1 ʉ̟ː=1,5,0.63963947912753,0.6895619348728999
+4,2,10,arstad bara broby hamneda jamshog loderup n_rorum ossjo vackelsang vaxtorp,uː=2 ɑː=1 æː=1 eː=1 ʉ̟ː=1 øː=2 iː=1,7,0.4036302059877765,0.8765943444248666
+4,3,7,borga brando dragsfjard houtskar kyrkslatt narpes saltvik,uː=1 oː=1 æː=1 eː=1 yː=1 ʉ̟ː=2 øː=2 iː=2,8,0.431625653443866,0.9437830650473321
+3,1,73,ankarsrum anundsjo are arjeplog arsunda asby aspas bengtsf berg bjurholm boda borga brando bredsattra burseryd burtrask dalby dragsfjard faro floby frandef frillesas grangarde graso hammaro haraker houtskar jarnboas jarsnas karna karsta korsberga kramfors kyrkslatt lanna leksand malung narpes nora nysatra ockelbo orust ostad ovanaker oxaback pitea ragunda rimforsa s_finnskoga s_mellosa saltvik segerstad skee skinnskatteberg skog skuttunge sorsele sorunda sproge st_anna stenberga storsjo strom tjallmo torhamn torp torsas torso v_vingaker vemdalen viby vilhelmina villberga,uː=1 oː=1 yː=1,3,0.6524454027380923,0.6875692461394607
+3,2,10,arstad bara broby hamneda jamshog loderup n_rorum ossjo vackelsang vaxtorp,uː=2 ɑː=1 æː=1 eː=1 ʉ̟ː=1 øː=2 iː=1,7,0.31179335641947975,0.9356369364405244

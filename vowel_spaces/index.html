@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nine-vowel village comparison</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 system-ui;color:#26343b;background:#f6f8fa}
+header{position:sticky;top:0;z-index:10;background:#fffffff5;border-bottom:1px solid #cdd6dd;box-shadow:0 2px 8px #0001;padding:.6rem max(1rem,calc((100vw - 1450px)/2));backdrop-filter:blur(8px)}
+.toolbar{display:flex;align-items:center;gap:.5rem 1.2rem;flex-wrap:wrap}select,input,button{font:inherit;padding:.25rem .5rem}input{width:230px;max-width:100%}a{color:#075e8c}main{max-width:1450px;margin:auto;padding:1rem}.note{max-width:1100px}.village{background:white;border:1px solid #d8dfe5;border-radius:8px;margin:1rem 0;scroll-margin-top:7rem;padding:.5rem 1rem}.village h2{margin:.3rem 0;font-size:1.2rem}.plots,.column-headings{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.plots img{display:block;width:100%;height:auto}.column-headings{text-align:center;font-weight:600}small{color:#586872}[hidden]{display:none!important}#empty{padding:2rem;text-align:center}@media(max-width:600px){header{padding:.5rem}.toolbar{gap:.4rem}main{padding:.5rem}.village{padding:.4rem}.plots{gap:.1rem}.column-headings{gap:.1rem}input{width:180px}}
+</style>
+<header><div class="toolbar"><strong>Nine-vowel spaces</strong>
+<label>Timepoint <select id="time"><option value="20">20%</option><option value="50" selected>50%</option><option value="80">80%</option></select></label>
+<label>Find village <input id="search" type="search" placeholder="e.g. bara or kårsta" aria-label="Find village"></label>
+<button id="clear" type="button">Clear</button><span id="count" role="status" aria-live="polite"></span>
+<a href="../Reports/index.html">Reports</a> · <a href="paginated.html">Page overviews / CSVs</a>
+</div><div class="column-headings"><span>PCA</span><span>FastTrack Bark</span></div></header>
+<main>
+<h1>Village vowel spaces</h1>
+<p class="note">One village per row: PCA on the left, FastTrack Bark on the right. Search filters the village list immediately; accents and underscores are ignored. Clicking a plot opens its SVG. Scales stay fixed across the three timepoints within each village and method, but are not shared across villages or methods.</p>
+<details class="note"><summary>Method</summary><p>Coordinate-wise token medians within each speaker and vowel, then medians across speakers within each village. The two-standard-deviation covariance ellipse uses all available vowel anchors, including unpaired /iː/. The six original directed vowel-pair arrows remain; no midpoint markers or midpoint ellipse. Incomplete inventories, Gotland and Finland are retained. PCA uses the new nine-vowel model, displayed as −PC1/−PC2; formants use −Bark F2/−Bark F1. Angles are signed from the horizontal (−90° to +90°); near-circular ellipses are marked unstable. These are descriptive ellipses, not confidence intervals.</p></details>
+<div id="villages"></div><p id="empty" hidden>No matching villages.</p>
+</main>
+<script>
+const villages=["alvdalen", "ankarsrum", "anundsjo", "are", "arjeplog", "arstad", "arsunda", "asby", "aspas", "bara", "bengtsf", "berg", "bjurholm", "boda", "borga", "brando", "bredsattra", "broby", "burseryd", "burtrask", "dalby", "dragsfjard", "faro", "floby", "fole", "frandef", "frillesas", "grangarde", "graso", "hammaro", "hamneda", "haraker", "houtskar", "husby", "jamshog", "jarnboas", "jarsnas", "karna", "karsta", "korsberga", "kramfors", "kyrkslatt", "lanna", "leksand", "loderup", "malung", "munsala", "n_rorum", "narpes", "nora", "nysatra", "ockelbo", "orsa", "orust", "ossjo", "ostad", "ovanaker", "oxaback", "pitea", "ragunda", "rimforsa", "s_finnskoga", "s_mellosa", "saltvik", "sarna", "segerstad", "skee", "skinnskatteberg", "skog", "skuttunge", "sorsele", "sorunda", "sproge", "st_anna", "stenberga", "storsjo", "strom", "tjallmo", "torhamn", "torp", "torsas", "torso", "v_vingaker", "vackelsang", "vaxtorp", "vemdalen", "viby", "vilhelmina", "villberga", "vindeln", "vora"], $=id=>document.getElementById(id);
+const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[_\s-]+/g,'');
+const rows=villages.map(village=>{const section=document.createElement('section');section.className='village';section.id='village-'+village;
+ const heading=document.createElement('h2');heading.textContent=village;section.appendChild(heading);
+ const plots=document.createElement('div');plots.className='plots';section.appendChild(plots);
+ const images=['pca','fasttrack_bark'].map(method=>{const link=document.createElement('a'),img=document.createElement('img');img.loading='lazy';img.decoding='async';img.width=580;img.height=440;link.target='_blank';link.rel='noopener';link.appendChild(img);plots.appendChild(link);return{method,img,link}});
+ $('villages').appendChild(section);return{village,section,images};
+});
+function updateTime(){const time=$('time').value;for(const row of rows)for(const item of row.images){const path='villages/'+item.method+'/'+row.village+'_t'+time+'.svg';item.img.src=path;item.link.href=path;item.img.alt=row.village+' · '+(item.method==='pca'?'PCA':'FastTrack Bark')+' at '+time+'%'}}
+function filter(){const query=normalize($('search').value);let count=0;for(const row of rows){const show=normalize(row.village).includes(query);row.section.hidden=!show;if(show)count++}$('count').textContent=count+' / '+villages.length+' villages';$('empty').hidden=count>0}
+$('time').addEventListener('change',updateTime);$('search').addEventListener('input',filter);$('clear').addEventListener('click',()=>{$('search').value='';filter();$('search').focus()});$('search').addEventListener('keydown',event=>{if(event.key==='Escape'){$('search').value='';filter()}});updateTime();filter();
+</script></html>

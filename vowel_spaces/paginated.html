@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nine-vowel village spaces: paginated overview</title>
+<style>body{max-width:1600px;margin:auto;padding:1.5rem;font:16px/1.5 system-ui;color:#26343b}select{font:inherit;margin:.4rem}img{width:100%}a{color:#075e8c}</style>
+<p><a href="../Reports/index.html">Reports</a></p>
+<h1>Nine-vowel village spaces</h1>
+<p>Token medians are calculated separately for each speaker, vowel and temporal point; village anchors are then coordinate-wise medians of the speaker medians. Each available vowel contributes one anchor to the covariance ellipse, including unpaired /iː/. Speakers and villages with incomplete inventories are retained; panel titles give the number of vowels available.</p>
+<p>The ellipse is drawn at two covariance standard deviations, not as a confidence interval. Its major-axis angle is measured from the displayed horizontal (signed −90° to +90°); nearly circular ellipses are labelled unstable. The six original directed vowel pairs are retained, with no midpoint markers or midpoint ellipse. /iː/ has no arrows. Gotland and Finland are included.</p>
+<p>PCA uses the newly fitted nine-vowel model, displayed as −PC1 and −PC2. FastTrack uses −Bark F2 and −Bark F1. No geographic model is fitted.</p>
+<label>Method <select id="method"><option value="pca">PCA</option><option value="fasttrack_bark">FastTrack Bark</option></select></label>
+<label>Timepoint <select id="time"><option>20</option><option selected>50</option><option>80</option></select>%</label>
+<label>Page <select id="page"><option value="01">1: villages 1–24</option><option value="02">2: villages 25–48</option><option value="03">3: villages 49–72</option><option value="04">4: villages 73–91</option></select></label>
+<p><a id="png">Full PNG</a> · <a id="positions">Village vowel positions CSV</a> · <a id="angles">Ellipse angles CSV</a> · <a href="../data/nine_vowel_token_trajectories.csv">Source token measurements</a></p>
+<img id="plot" alt="Village vowel spaces with nine-vowel ellipses and six directed vowel-pair arrows">
+<script>
+const $=id=>document.getElementById(id);
+function update(){const base=$('method').value+'_t'+$('time').value+'/';const image=base+'midpoint_vowel_spaces_'+$('page').value+'.png';$('plot').src=image;$('png').href=image;$('positions').href=base+'vowel_positions.csv';$('angles').href=base+'ellipse_angles.csv'}
+['method','time','page'].forEach(id=>$(id).addEventListener('change',update));update();
+</script>
